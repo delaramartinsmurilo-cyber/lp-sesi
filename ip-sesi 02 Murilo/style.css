@@ -1,0 +1,129 @@
+:root{
+    --text: #ffffff;
+    --bg: #ffffff;
+    --lgreen: #606C38;
+    --dgreen: #283618;
+    --lorange: #6d471c;
+    --dorange: #ffffff;
+    --font: "Roboto", sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: var(--font);
+    background-image: url('../images.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: image-set(url(https://www.paranaportal.com/wp-content/uploads/2025/11/coritiba-torcida-001-696x464.jpeg) 1x);
+
+}
+
+
+nav{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2vw;
+    height: 100px;
+    z-index: 999;
+    animation: decima 1s ease-in-out;
+    transition: all 1s ease-in-out; 
+}
+
+nav.sc{
+    background-color: var(--lgreen);
+}
+h1{
+    font-size: 160px;
+    word-break: break-word;
+    overflow-wrap: break-word;
+    text-shadow: 0px 1px 5px var(--bg);
+    letter-spacing: 7px;
+    width: 100%;
+    text-align: center;
+    animation: esquerda 2s ease-in-out;
+
+}
+
+@keyframes decima {
+    0%{
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+}
+
+h2{
+    font-size: 3vh;
+    letter-spacing: 2px;
+    width: 67%;
+    margin-top: -20px;
+    text-align: center;
+    text-shadow: 0px 1px 5px var(--bg);
+    animation: direita 2s ease-in-out;
+}
+
+.navItems{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: #ffffff56;
+    padding: 10px;
+    border-radius: 999px;
+}
+
+.navItems img{
+    width: 30px;
+}
+
+.navItems:hover{
+    cursor: pointer;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+    font-size: 1vw;
+    letter-spacing: 7px;
+    opacity: 0.8;
+    transition: all 200ms linear;
+    font-weight: 700;
+}
+
+a:hover{
+    opacity: 1;
+    text-shadow: 0px 3px 10px var(--text);
+}
+
+section{
+    min-height: 100vh;
+    height: auto;
+}
+
+#s1{
+    background-image: url('../');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+
+
+@media (width <= 1000px) {
+    .navWords{
+        display: none;
+    }
+}
