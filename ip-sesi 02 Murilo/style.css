@@ -1,10 +1,10 @@
 :root{
-    --text: #ffffff;
-    --bg: #ffffff;
-    --lgreen: #606C38;
-    --dgreen: #283618;
+    --text: #0e5f06;
+    --bg: #707a12;
+    --lgreen: #596d19;
+    --dgreen: #43720e;
     --lorange: #6d471c;
-    --dorange: #ffffff;
+    --dorange: #8e9c0d;
     --font: "Roboto", sans-serif;
 }
 
@@ -79,7 +79,7 @@ h2{
     align-items: center;
     justify-content: center;
     gap: 10px;
-    background-color: #ffffff56;
+    background-color: #ffffff70;
     padding: 10px;
     border-radius: 999px;
 }
@@ -121,7 +121,16 @@ section{
     
 }
 
+#s3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
+.vid {
+    width: 100%;
+    height: 920px;
+}
 @media (width <= 1000px) {
     .navWords{
         display: none;
