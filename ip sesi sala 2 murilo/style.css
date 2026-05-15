@@ -166,16 +166,15 @@ footer a img:hover {
 
 #s3{
     background-image: url('../alto_da_gloria.webp');
-    width: 100%;
-    height: 300px;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
     display: flex;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 50px;
+    min-height: 70hv;
    
 }
 
@@ -183,13 +182,19 @@ footer a img:hover {
     width: 100%;
     height: 920px;
 }
+
 #s2{
+    background-image: url('../cdtp-share.png');
     display: flex;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
     gap: 50px;
     min-height: 70hv;
+
 }
 
 .card{
