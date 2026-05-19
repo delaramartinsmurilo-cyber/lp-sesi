@@ -1,0 +1,381 @@
+:root {
+    --text: #ffffff;
+    --bg: #545c08;
+    --lpurple: #185b08;
+    --dpurple: #4e5a07b0;
+    --lorange: #DDA15E;
+    --dorange: #BC6C25;
+    --font: "Roboto", sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font);
+    background-color: var(--bg);
+    color: var(--text);
+}
+
+nav {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: #0000009c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2vw;
+    height: 100px;
+    z-index: 999;
+    animation: decima 1s ease-in-out;
+    transition: all 1s ease-in-out;
+}
+
+nav.sc {
+    background-color: var(--dpurple);
+}
+
+@keyframes decima {
+    0% {
+        transform: translateY(-100px);
+    }
+}
+
+.navItems {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: #ffffff56;
+    padding: 10px;
+    border-radius: 999px;
+}
+
+.navItems img {
+    width: 30px;
+}
+
+.navItems:hover {
+    cursor: pointer;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    font-size: 1vw;
+    letter-spacing: 7px;
+    opacity: 0.8;
+    transition: all 200ms linear;
+    font-weight: 700;
+    text-shadow: 0px 1px 5px var(--dpurple);
+
+}
+
+a:hover {
+    opacity: 1;
+    text-shadow: 0px 3px 10px var(--text);
+}
+
+section {
+    min-height: 100vh;
+    height: auto;
+}
+
+#s1{
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.slider{
+    width:900px;
+    height:700px;
+    overflow:hidden;
+    position:relative;
+}
+
+.slides{
+    display:flex;
+    transition: transform 1s ease;
+}
+
+.slides img{
+    width:900px;
+    height:700px;
+    object-fit:cover;
+    flex-shrink:0;
+}
+
+@keyframes slide{
+
+    0%,4%{
+        transform:translateX(0);
+    }
+
+    5%,8%{
+        transform:translateX(-900px);
+    }
+
+    9%,12%{
+        transform:translateX(-1800px);
+    }
+
+    13%,16%{
+        transform:translateX(-2700px);
+    }
+
+    17%,20%{
+        transform:translateX(-3600px);
+    }
+
+}
+
+
+
+h1 {
+    font-size: 160px;
+    word-break: break-word;
+    overflow-wrap: break-word;
+    text-transform: uppercase;
+    text-shadow: 0px 1px 5px var(--dpurple);
+    letter-spacing: 7px;
+    width: 100%;
+    text-align: center;
+    animation: esquerda 2s ease-in-out;
+}
+
+@keyframes esquerda {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+}
+
+h2 {
+    font-size: 3vw;
+    letter-spacing: 2px;
+    width: 67%;
+    margin-top: -20px;
+    text-align: center;
+    text-shadow: 0px 1px 5px var(--dpurple);
+    animation: direita 2s ease-in-out;
+}
+
+@keyframes direita {
+    0% {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    height: 60px;
+    background-color: transparent;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    transition: all 1s ease-in-out;
+}
+
+footer.ft {
+    background-color: var(--dpurple);
+}
+
+footer a img {
+    opacity: 0.7;
+    transition: all 500ms linear;
+}
+
+footer a img:hover {
+    opacity: 1;
+    box-shadow: 0px 3px 10px #09090909;
+    transform: translateY(-5px) scale(1.1) rotate(360deg);
+}
+
+#s3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.vid {
+    width: 100%;
+    height: 920px;
+}
+
+#s2 {
+    background-image: url('../WhatsApp Image 2026-05-15 at 21.41.04.jpeg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    min-height: 70vh;
+}
+#s5 {
+    background-image: url('../WhatsApp Image 2026-05-18 at 18.24.02 (22).jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+
+.card {
+    width: 300px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    opacity: 0;
+    transform: translateY(200px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.card.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#s4 {
+    min-height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding-top: -8vh;
+    padding: 100px;
+}
+
+.formulario {
+    width: 300px;
+    height: auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    border: 2px solid var(--text);
+    border-radius: 10px;
+    box-shadow: 0px 3px 10px #051723;
+    margin-bottom: 8vh;
+}
+
+.formulario label {
+    width: 100%;
+    padding: 20px;
+    margin-bottom: -35px;
+    font-size: 18px;
+}
+
+.formulario input {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid var(--text);
+    background-color: transparent;
+    color: var(--text);
+    border-radius: 5px;
+    font-size: 16px;
+    box-shadow: 0px 3px 10px #051723;
+}
+
+
+.formulario textarea {
+    max-width: 100%;
+    width: 255px;
+    min-width: 255px;
+    padding: 10px;
+    border: 2px solid var(--text);
+    border-radius: 5px;
+    background-color: transparent;
+    color: var(--text);
+    font-size: 16px;
+    box-shadow: 0px 3px 10px #051723;
+}
+
+.formulario button {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--text);
+    color: #051723;
+    border: none;
+    border: 2px solid var(--bg);
+    border-radius: 5px;
+    font-size: 18px;
+    font-size: 600;
+    transition: all 200ms ease-in-out;
+}
+
+.formulario button:hover {
+    cursor: pointer;
+    box-shadow: 0px 3px 10px #051723;
+    background-color: transparent;
+    color: var(--text);
+    border: 2px solid var(--text);
+}
+
+#saturno-container {
+    width: 700px;
+    height: 500px;
+    cursor: grab;
+    overflow: hidden;
+}
+
+
+
+
+
+@media (width <=1000px) {
+    .navWords {
+        display: none;
+    }
+
+    #s1 {
+        background-image: url('../assets/images/bgmobile.jpg');
+        padding-top: 120px;
+        padding-bottom: 80px;
+    }
+
+    h1 {
+        line-height: 120px;
+    }
+
+    h2 {
+        margin-top: 10px;
+        font-size: 36px;
+    }
+
+    .vid {
+        width: 100%;
+        height: 412px;
+    }
+
+    #saturno-container {
+        display: none;
+    }
+
+
+}
