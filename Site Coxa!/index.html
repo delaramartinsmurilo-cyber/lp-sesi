@@ -1,0 +1,391 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coritiba Maior do Paraná</title>
+        <style>
+
+body{
+    background-color: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Área dos cards */
+.container{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+/* Card */
+.card{
+    width: 320px;
+    background-color: rgb(255, 250, 250);
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0px 4px 10px rgba(5, 5, 5, 0.2);
+    padding-bottom: 20px;
+}
+
+/* Área das imagens */
+.imagens{
+    display: flex;
+}
+
+/* Imagens */
+.imagens img{
+    width: 50%;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Texto */
+.conteudo{
+    padding: 15px;
+    text-align: center;
+}
+
+.conteudo h2{
+    margin-bottom: 10px;
+}
+
+.conteudo p{
+    color: #555;
+    margin-bottom: 20px;
+}
+
+/* Botão */
+.botao{
+    background-color: #0084ff;
+    color: rgb(255, 253, 253);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.botao:hover{
+    background-color: #005fcc;
+}
+
+</style>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  </head>
+  <body>
+    <nav>
+      <span class="navItems" onclick="navTo('s1')">
+        <img src="../brazil_coritiba.football-logos.cc.svg" alt="Jogo" width="30px" />
+        <a class="navWords">inicio</a>
+      </span>
+      <span class="navItems" onclick="navTo('s2')">
+        <img src="../brazil_coritiba.football-logos.cc.svg" alt="Carros" width="30px" />
+        <a class="navWords">socio</a>
+      </span>
+      <span class="navItems" onclick="navTo('s3')">
+        <img src="../brazil_coritiba.football-logos.cc.svg" alt="Vídeo" width="30px" />
+        <a class="navWords">ingressos</a>
+      </span>
+      <span class="navItems" onclick="navTo('s4')">
+        <img src="../mobile.png" alt="Contato" width="30px" />
+        <a class="navWords">Contato</a>
+      </span>
+      <span class="navItems" onclick="navTo('s5')">
+        <img src="../brazil_brazilian-serie-a.football-logos.cc.svg" alt="Contato" width="30px" />
+        <a class="navWords">Jogos</a>
+      </span>
+    </nav>
+    <main>
+      <section id="s1">
+        <div class="slider">
+            <div class="slides" id="slides">
+        <img src="../WhatsApp Image 2026-05-18 at 18.24.02 (3).jpeg" alt="" class="">
+        <img src="../WhatsApp Image 2026-05-18 at 18.24.02 (4).jpeg" alt="" class="">
+        <img src="../WhatsApp Image 2026-05-18 at 18.24.02 (5).jpeg" alt="" class="">
+        <img src="../WhatsApp Image 2026-05-22 at 21.03.45.jpeg" alt="" class="">
+        <img src="../WhatsApp Image 2026-05-18 at 18.24.02 (7).jpeg" alt="" class="">
+        <img src="../WhatsApp Image 2026-05-18 at 18.24.02 (8).jpeg" alt="" class="">
+        <img src="../WhatsApp Image 2026-05-18 at 18.24.02 (9).jpeg" alt="" class="">
+        <img src="../WhatsApp Image 2026-05-18 at 18.24.02 (10).jpeg" alt="" class="">
+        <img src="../WhatsApp Image 2026-05-18 at 18.24.02 (11).jpeg" alt="" class="">
+        <img src="../WhatsApp Image 2026-05-18 at 18.24.02 (12).jpeg" alt="" class="">
+        <img src="../WhatsApp Image 2026-05-18 at 18.24.02 (13).jpeg" alt="" class="">
+        <img src="../WhatsApp Image 2026-05-18 at 18.24.02 (14).jpeg" alt="" class="">
+        <img src="../WhatsApp Image 2026-05-18 at 18.24.02 (15).jpeg" alt="" class="">
+        <img src="../WhatsApp Image 2026-05-22 at 21.03.44 (1).jpeg" alt="" class="">
+        <img src="../WhatsApp Image 2026-05-18 at 18.24.02 (17).jpeg" alt="" class="">
+        <img src="../WhatsApp Image 2026-05-18 at 18.24.02 (24).jpeg" alt="" class="">
+        <img src="../WhatsApp Image 2026-05-18 at 18.24.02 (28).jpeg" alt="" class="">
+        <img src="../WhatsApp Image 2026-05-18 at 18.24.02 (29).jpeg" alt="" class="">
+        <img src="../WhatsApp Image 2026-05-18 at 18.24.02 (30).jpeg" alt="" class="">
+        <img src="../WhatsApp Image 2026-05-18 at 18.24.02 (31).jpeg" alt="" class="">
+        <img src="../WhatsApp Image 2026-05-18 at 18.24.02 (33).jpeg" alt="" class="">
+        <img src="../WhatsApp Image 2026-05-18 at 18.24.02 (34).jpeg" alt="" class="">
+        <img src="../Foto-Coritiba-torcida-Imperio.jpg" alt="" class="imagem-transicao">
+        <img src="../alto_da_gloria.webp" alt="" class="imagem-transicao">
+        <img src="../WhatsApp Image 2026-05-22 at 21.03.40 (1).jpeg" alt="" class="imagem-transicao">
+        <img src="../WhatsApp Image 2026-05-22 at 21.03.40.jpeg" alt="" class="imagem-transicao">
+        <img src="../WhatsApp Image 2026-05-22 at 21.03.42 (1).jpeg" alt="" class="imagem-transicao">
+        <img src="../WhatsApp Image 2026-05-22 at 21.03.42.jpeg" alt="" class="imagem-transicao">
+        <img src="../WhatsApp Image 2026-05-22 at 21.03.43 (1).jpeg" alt="" class="imagem-transicao">
+        <img src="../WhatsApp Image 2026-05-22 at 21.03.43 (2).jpeg" alt="" class="imagem-transicao">
+        <img src="../WhatsApp Image 2026-05-22 at 21.03.43.jpeg" alt="" class="imagem-transicao">
+        <img src="../WhatsApp Image 2026-05-18 at 18.24.02 (6).jpeg" alt="" class="imagem-transicao">
+        </div>
+        </div>
+      </section>
+      <section id="s2">
+        <div class="card">
+          <img width="300px" height="auto" src="../socios-coritiba-planos-valores-e-mais.jpg" alt="nfs1" />
+          <div>
+            <br>
+            <h4> assina o socio do coritiba e adquira o cartão de socio para não perder nenhum jogo do verdão</h4>
+            <p>o socio tambem seus privilégios</p>
+          </div>
+        </div>
+        <div class="card">
+          <img width="300px" height="auto" src="../cdtp-share.png" alt="nfs2" />
+          <div>
+            <br>
+            <h4>Privilégios do socio</h4>
+            <p>voce pode entrar nos camarotes do estadios, comprar lanches por delivery e o desafio do intervalo onde o torcedor poderá entrar dentro de campo.</p>
+          </div>
+        </div>
+      </section>
+      <section id="s3">
+        <div class="container">
+
+    <div class="card">
+
+        <div class="imagens">
+            <img src="brazil_coritiba.football-logos.cc.svg" alt="">
+            <img src="brazil_bahia.football-logos.cc.svg" alt="">
+        </div>
+
+        <div class="conteudo">
+            <h2>Coritiba X Bahia</h2>
+            <p>Couto Pereira / seg 20:00</p>
+
+            <button class="botao">
+                Fazer check-in
+            </button>
+        </div>
+
+    </div>
+
+</div>
+      
+
+      </section>
+      <section id="s4">
+        <h3>CONTATO</h3>
+      
+        <div class="formulario">
+          <label for="nome">nome:</label>
+          <input type="text" id="nome" placeholder="Digite seu nome">
+          <label for="assunto">Mensagem:</label>
+          <textarea id="assunto" placeholder="Digite sua mensagem"></textarea>
+          <button onclick="enviar()">ENVIAR</button>
+        </div>
+        <p>entre em contato com a nossa central para fazer o socio ou o check-in para os jogos do Coxa, e aproveita faça o login no nosso site para opbter mais informações</p>
+        <div>
+          <div id="saturno-container"></div>
+        </div>
+      </section>
+      <section id="s5">
+        <div class="jogo">
+
+    <h1>Próximos jogos do Coritiba</h1>
+    <p>Segunda-Feira / 25 de maio 20:00 / Estadio Major Antônio Couto Pereira / Brasileirão Serie A</p>
+
+    <div class="times">
+
+        <div class="time">
+            <img src="../brazil_coritiba.football-logos.cc.svg" alt="">
+            <p>Coritiba</p>
+        </div>
+
+        <h2>X</h2>
+
+        <div class="time">
+            <img src="../brazil_bahia.football-logos.cc.svg" alt="">
+            <p>Bahia</p>
+        </div>
+
+    </div>
+
+</div>
+      </section>
+      <section id="s6">
+       <div class="jogo">
+        <p>Sábado / 30 de maio 16:00 / Estadio Maracanã / Brasileirão Serie A</p>
+
+    <div class="times">
+
+        <div class="time">
+            <img src="VAR_System_Logo.svg" alt="">
+            <p>Flamengo</p>
+        </div>
+
+        <h2>X</h2>
+
+        <div class="time">
+            <img src="brazil_coritiba.football-logos.cc.svg" alt="">
+            <p>Coritiba</p>
+        </div>
+
+    </div>
+
+</div>
+      </section>
+      <section id="s7">
+       <div class="jogo">
+        <p>A definir / 22 de Julho A definir / Estadio Major Antônio Couto Pereira / Brasileirão Serie A</p>
+
+    <div class="times">
+
+        <div class="time">
+            <img src="brazil_coritiba.football-logos.cc.svg" alt="">
+            <p>Coritiba</p>
+        </div>
+
+        <h2>X</h2>
+
+        <div class="time">
+            <img src="logo-palmeiras-4096.png" alt="">
+            <p>Palmeiras</p>
+        </div>
+
+    </div>
+
+</div>
+      </section>
+      <section id="s8">
+       <div class="jogo">
+        <p>A definir/ A definir / Estádio Municipal Cicero de Souza Marques / Brasileirão Serie A</p>
+
+    <div class="times">
+
+        <div class="time">
+            <img src="logo-red-bull-bragantino-512.png" alt="">
+            <p>bragantino</p>
+        </div>
+
+        <h2>X</h2>
+
+        <div class="time">
+            <img src="brazil_coritiba.football-logos.cc.svg" alt="">
+            <p>Coritiba</p>
+        </div>
+
+    </div>
+
+</div>
+      </section>
+      <section id="s9">
+        <div class="jogo">
+
+    <div class="times">
+
+        <div class="time">
+            <img src="brazil_coritiba.football-logos.cc.svg" alt="">
+            <p>Coritiba</p>
+        </div>
+
+        <h2>X</h2>
+
+        <div class="time">
+            <img src="logo-cruzeiro-512.png" alt="" class="ponta-cabeca"  width="100px">
+            <p>Cruzeiro</p>
+        </div>
+
+    </div>
+
+</div>
+      </section>
+      <section id="s10">
+         <iframe
+          class="vid"
+          src=""
+          title="YouTube video player"
+          frameborder="0"
+          allow="
+            accelerometer;
+            autoplay;
+            clipboard-write;
+            encrypted-media;
+            gyroscope;
+            picture-in-picture;
+            web-share;
+          "
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+      </section>
+    </main>
+    <footer>
+      <a href="https://www.facebook.com" target="_blank">
+        <img width="40px" src="../facebook (1).png" alt="facebook" />
+      </a>
+      <a href="https://www.instagram.com" target="_blank">
+        <img width="40px" src="../instagram.png" alt="instagram" />
+      </a>
+      <a href="https://www.youtube.com" target="_blank">
+        <img width="40px" src="../youtube.png" alt="youtube" />
+      </a>
+    </footer>
+ 
+    <script src="script.js"></script>
+  </body>
+ <script>
+
+const slides =
+document.getElementById("slides");
+
+const imagens =
+document.querySelectorAll(".slides img");
+
+let index = 0;
+
+const largura = 900;
+
+function passarSlide(){
+
+    index++;
+
+    slides.style.transition = "1s";
+
+    slides.style.transform =
+    `translateX(-${index * largura}px)`;
+
+
+    
+    if(index === imagens.length - 1){
+
+        setTimeout(() => {
+
+            slides.style.transition = "none";
+
+            slides.style.transform =
+            "translateX(0px)";
+
+            index = 0;
+
+        },1000);
+    }
+}
+
+setInterval(passarSlide,3000);
+</script>
+
+</html>
